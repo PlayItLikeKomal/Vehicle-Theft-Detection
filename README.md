@@ -3,10 +3,15 @@
 ## <div align="center">Introduction</div>
 
 <p>
-A model that generates alert when detected a stolen vehicle. It detects license plates of vehicles to draw
-vehicle's make and model description from https://excise.gos.pk/vehicle/vehicle_search and compare
-those description with the model's detected make and model description for that vehicle, and generate
-alert when both sets of description don't match.
+Welcome to the Stolen Vehicle Alert Model repository! This project aims to detect stolen vehicles by leveraging computer vision techniques and comparing vehicle license plate information. By utilizing pretrained models from YOLOv5, we have trained a custom dataset consisting of 1000 images of various vehicle types, including heavy vehicles, bikes, light vehicles, mid-range vehicles, 3-wheel rickshaws, and transport vehicles commonly found in Pakistan. Additionally, we have collected and annotated 10,000 images of license plates to enhance our model's accuracy.
+
+To ensure a diverse and robust dataset, we employed techniques such as applying effects, backgrounds, crops, and augmentations to expand the image quantity using Roboflow. Our primary model architecture, YOLOv5x, was chosen for its superior performance. However, we discovered that the resolution of license plate images captured by CCTV cameras, our target footage source, was often too low to extract accurate text information. To address this challenge, we researched and implemented ESRGAN, a model that not only magnifies the image but also enhances its resolution, enabling us to extract text more effectively. For this purpose, we incorporated the EasyOCR library.
+
+The final part of our model involves making API calls to the Excise Department website of Pakistan (https://excise.gos.pk/vehicle/vehicle_search). By accessing the government's vehicle database, we retrieve information about the detected vehicle from the image and compare it with the registered details. If there is a discrepancy between the two sets of information, an alert is generated, indicating a potential stolen vehicle.
+
+Please note that due to security and government regulations, we cannot upload the API-related code or access to the Excise Department website to this repository. However, we encourage you to contribute to the project and customize it to suit your specific needs.
+
+Thank you for your interest in our Stolen Vehicle Alert Model, and we look forward to your contributions!
 </p>
 
 <!--
