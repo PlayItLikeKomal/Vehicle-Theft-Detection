@@ -1,15 +1,12 @@
 <br>
 
+## <div align="center">Introduction</div>
+
 <p>
 A model that generates alert when detected a stolen vehicle. It detects license plates of vehicles to draw
 vehicle's make and model description from https://excise.gos.pk/vehicle/vehicle_search and compare
 those description with the model's detected make and model description for that vehicle, and generate
 alert when both sets of description don't match.
-</p>
-
-<p>
-YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a>
- open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
 </p>
 
 <!--
@@ -20,6 +17,11 @@ YOLOv5 🚀 is a family of object detection architectures and models pretrained 
 </div>
 
 ## <div align="center">Documentation</div>
+
+<p>
+YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a>
+ open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
+</p>
 
 See the [YOLOv5 Docs](https://docs.ultralytics.com) for full documentation on training, testing and deployment.
 
